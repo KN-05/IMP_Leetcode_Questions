@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class TwoSum167 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,7 +9,6 @@ public class TwoSum167 {
         for (int i = 0; i < n; i++) {
             numbers[i] = sc.nextInt();
         }
-        // Target input
         int target = sc.nextInt();
         // Two Pointer Approach
         int left = 0;
@@ -27,6 +26,6 @@ public class TwoSum167 {
                 right--;
             }
         }
-
+        sc.close();
     }
 }
