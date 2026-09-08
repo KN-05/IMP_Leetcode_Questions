@@ -14,26 +14,29 @@ public class TypeOfTriangle3024 {
             nums[i] = sc.nextInt();
         }
 
-        // Triangle validity
+        // Check triangle validity
         if (nums[0] + nums[1] <= nums[2] ||
             nums[1] + nums[2] <= nums[0] ||
             nums[0] + nums[2] <= nums[1]) {
 
             System.out.println("none");
         }
-        // All three sides equal
+
+        // Equilateral
         else if (nums[0] == nums[1] && nums[1] == nums[2]) {
 
             System.out.println("equilateral");
         }
-        // Any two sides equal
+
+        // Isosceles
         else if (nums[0] == nums[1] ||
                  nums[1] == nums[2] ||
                  nums[0] == nums[2]) {
 
             System.out.println("isosceles");
         }
-        // All sides different
+
+        // Scalene
         else {
 
             System.out.println("scalene");
